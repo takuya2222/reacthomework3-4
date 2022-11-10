@@ -30,10 +30,9 @@ const Register = () => {
         registerPassword
       );
       const userId = userCredential.user.uid;
+      // firestoreに登録するために必要な記述
       stockUserInfo(userId);
-      console.log(stockUserInfo(userId));
     } catch (error) {
-      console.log(error);
       alert("正しく入力してください");
     }
   };
